@@ -8,5 +8,6 @@
     <string name="title_activity_library_choice">LibraryChoice</string>
     <string name="title_activity_find_friend">findFriend</string>
     <string name="title_activity_lib_info">LibInfo</string>
+    <string name="title_activity_register">Register</string>
 
 </resources>

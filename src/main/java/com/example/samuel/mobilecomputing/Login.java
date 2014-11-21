@@ -20,9 +20,10 @@ public class Login extends Activity {
     @Override
     protected void onResume(){
         super.onResume();
+        Button login = (Button)findViewById(R.id.login);
         Button register = (Button)findViewById(R.id.register);
 
-        register.setOnClickListener(new View.OnClickListener() {
+        login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
@@ -30,6 +31,16 @@ public class Login extends Activity {
                 startActivity(i);
             }
         });
+
+        register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                Intent i = new Intent(getApplicationContext(),Register.class);
+                startActivity(i);
+            }
+        });
+
     }
 
 

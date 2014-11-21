@@ -4,34 +4,20 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
 
-public class findFriend extends Activity {
+public class Register extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_find_friend);
-    }
-
-    @Override
-    protected void onResume(){
-        super.onResume();
-        ListView friendlist = (ListView) findViewById(R.id.friendList);
-
-         String[]  friendArray = {"Naruto","Ryuk","Natsu","Light","Sam","Lipee","Mohan","Anurag","Mohit"};
-
-        ArrayAdapter arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, friendArray);
-
-        friendlist.setAdapter(arrayAdapter);
+        setContentView(R.layout.activity_register);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.find_friend, menu);
+        getMenuInflater().inflate(R.menu.register, menu);
         return true;
     }
 
